@@ -1,0 +1,40 @@
+# C++ if-else
+
+## Description
+
+This program demonstrates the use of the `if-else` selection statement in C++. It checks whether a student has passed or failed based on the marks obtained.
+
+## Variables Used
+
+### 1. marks
+Stores the student's marks.
+
+## Main Function
+
+The `main()` function stores the student's marks and checks whether the marks are greater than or equal to 40.
+
+If the condition is true, the program displays `Pass`. Otherwise, it displays `Fail`.
+
+## Output
+
+Pass
+
+## Concept Used
+
+- Selection Statement
+- if-else Statement
+- Conditional Checking
+
+## Program Flow
+
+Start
+  ↓
+Store Student Marks
+  ↓
+Check marks >= 40
+  ↓
+Yes ─────→ Display "Pass"
+  ↓
+No ──────→ Display "Fail"
+  ↓
+End
