@@ -1,0 +1,80 @@
+C++ Base Reference With a Virtual Function
+Description
+
+This C++ program demonstrates run-time polymorphism using a base-class reference and a virtual area() function.
+
+The Shape class contains a virtual area() function. The Rectangle and Circle classes inherit from Shape and provide their own implementations of area().
+
+Classes Used
+1. Shape Class
+
+The Shape class is the base class.
+
+It contains the virtual area() function.
+The default implementation returns 0.0.
+It contains a virtual destructor.
+The virtual keyword enables run-time polymorphism.
+2. Rectangle Class
+
+The Rectangle class is derived from the Shape class.
+
+length stores the length.
+width stores the width.
+The constructor initializes the length and width.
+area() is overridden to calculate the rectangle's area.
+
+Formula:
+
+Area = Length × Width
+3. Circle Class
+
+The Circle class is also derived from the Shape class.
+
+radius stores the radius.
+The constructor initializes the radius.
+area() is overridden to calculate the circle's area.
+
+Formula:
+
+Area = π × Radius × Radius
+printArea() Function
+
+The function:
+
+void printArea(const Shape& shape)
+
+accepts a reference to the base class.
+
+Because area() is virtual, the appropriate derived-class function is called depending on the object passed to the function.
+
+Main Function
+
+In the main() function, two objects are created:
+
+Rectangle → length 5.0, width 3.0
+Circle → radius 2.0
+
+They are passed to the printArea() function:
+
+printArea(rectangle);
+printArea(circle);
+
+The correct area() function is selected at run time.
+
+Output
+Area: 15
+Area: 12.5664
+OOP Concept Used
+
+Run-Time Polymorphism — Base-Class Reference
+
+              Shape
+                |
+          virtual area()
+             /      \
+            /        \
+     Rectangle       Circle
+         |              |
+      Area = 15      Area = 12.5664
+
+The base-class reference can refer to different derived objects, and the appropriate overridden area() function is called during execution.

@@ -1,0 +1,57 @@
+C++ Friend / Non-Member Operator Overloading
+Description
+
+This C++ program demonstrates operator overloading using a friend non-member function.
+
+The + operator is overloaded so that an integer value can be added to a Complex object using an expression such as 10 + number. A friend function is used because the left operand is an integer, not a Complex object.
+
+Class Used
+1. Complex Class
+
+The Complex class is used to represent a complex number.
+
+real stores the real part.
+imaginary stores the imaginary part.
+The constructor initializes both values.
+display() displays the complex number.
+The operator+() function is declared as a friend function.
+Friend operator+() Function
+
+The friend function performs the addition of an integer and a complex number.
+
+For example:
+
+10 + (2 + 3i)
+       ↓
+    12 + 3i
+
+The integer 10 is added to the real part of the complex number, while the imaginary part remains unchanged.
+
+Main Function
+
+In the main() function, a Complex object is created with:
+
+Real part: 2
+Imaginary part: 3
+
+The integer 10 is then added to the complex number:
+
+Complex result = 10 + number;
+
+The resulting complex number is then displayed.
+
+Output
+Result: 12 + 3i
+OOP Concept Used
+
+Friend / Non-Member Operator Overloading
+
+        10 + Complex
+             |
+             ↓
+      Friend operator+()
+             |
+             ↓
+          12 + 3i
+
+The friend function can access the private members of the Complex class because it is declared using the friend keyword.

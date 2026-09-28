@@ -1,0 +1,56 @@
+C++ Area Calculator Using Function Overloading
+Description
+
+This C++ program demonstrates function overloading by calculating the areas of different shapes using functions with the same name, calculateArea().
+
+The calculateArea() functions have different parameter lists, so the compiler selects the appropriate function according to the arguments provided.
+
+Functions Used
+1. calculateArea(int side) Function
+
+This function calculates the area of a square.
+
+side stores the side length of the square.
+It returns side × side.
+It is called when one integer value is passed.
+2. calculateArea(int length, int width) Function
+
+This function calculates the area of a rectangle.
+
+length stores the length of the rectangle.
+width stores the width of the rectangle.
+It returns length × width.
+It is called when two integer values are passed.
+3. calculateArea(double radius) Function
+
+This function calculates the area of a circle.
+
+radius stores the radius of the circle.
+It uses the value of π (PI).
+It returns π × radius × radius.
+It is called when one double value is passed.
+Main Function
+
+In the main() function, the overloaded calculateArea() functions are called for:
+
+Square with side 5
+Rectangle with length 6 and width 4
+Circle with radius 2.0
+
+The calculated areas are then displayed.
+
+Output
+Square Area: 25
+Rectangle Area: 24
+Circle Area: 12.5664
+OOP Concept Used
+
+Compile-Time Polymorphism — Function Overloading
+
+             calculateArea()
+              /     |      \
+             /      |       \
+        Square   Rectangle   Circle
+       1 int     2 int       1 double
+
+The same function name calculateArea() performs different operations depending on the parameters passed. This demonstrates function overloading.

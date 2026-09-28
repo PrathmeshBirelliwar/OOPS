@@ -1,0 +1,72 @@
+C++ Binary + Operator Overloading for Complex Numbers
+Description
+
+This C++ program demonstrates binary operator overloading by overloading the + operator for a Complex class.
+
+The overloaded + operator is used to add two complex number objects. The real parts and imaginary parts of the two numbers are added separately.
+
+Class Used
+1. Complex Class
+
+The Complex class is used to represent complex numbers.
+
+real stores the real part of the complex number.
+imaginary stores the imaginary part.
+The constructor initializes the real and imaginary values.
+operator+() overloads the binary + operator.
+display() displays the complex number.
+operator+() Function
+
+The operator+() function performs addition of two complex numbers.
+
+It adds:
+
+Real parts → first.real + second.real
+Imaginary parts → first.imaginary + second.imaginary
+
+For example:
+
+2 + 3i
++
+4 + 5i
+---------
+6 + 8i
+Main Function
+
+In the main() function, two Complex objects are created:
+
+First complex number: 2 + 3i
+Second complex number: 4 + 5i
+
+The two objects are added using:
+
+Complex sum = first + second;
+
+The first number, second number, and their sum are then displayed.
+
+Output
+First complex number: 2 + 3i
+Second complex number: 4 + 5i
+Sum: 6 + 8i
+OOP Concept Used
+
+Binary Operator Overloading
+
+        Complex
+       /       \
+   First       Second
+  2 + 3i       4 + 5i
+       \       /
+        + operator
+            ↓
+         6 + 8i
+
+The expression:
+
+first + second
+
+internally calls:
+
+first.operator+(second);
+
+Thus, the program demonstrates how the binary + operator can be given a specific meaning for objects of a user-defined class.

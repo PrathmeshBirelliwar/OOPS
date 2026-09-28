@@ -1,0 +1,74 @@
+C++ Base Pointer With Virtual Function
+Description
+
+This C++ program demonstrates run-time polymorphism using a base-class pointer and a virtual function.
+
+The Animal class contains a virtual sound() function. The Dog and Cat classes inherit from Animal and provide their own implementations of the sound() function.
+
+Classes Used
+1. Animal Class
+
+The Animal class is the base class.
+
+It contains the virtual sound() function.
+The function displays "Animal makes a sound".
+It also contains a virtual destructor.
+The virtual keyword enables run-time polymorphism.
+2. Dog Class
+
+The Dog class is derived from the Animal class.
+
+It overrides the sound() function.
+It displays "Dog barks".
+The override keyword indicates that it overrides the base-class virtual function.
+3. Cat Class
+
+The Cat class is also derived from the Animal class.
+
+It overrides the sound() function.
+It displays "Cat meows".
+Main Function
+
+In the main() function, objects of Dog and Cat are created.
+
+A base-class pointer is used:
+
+Animal* animal;
+
+First, the pointer points to the Dog object:
+
+animal = &dog;
+
+Then:
+
+animal->sound();
+
+calls the Dog version of sound().
+
+After that, the same pointer points to the Cat object:
+
+animal = &cat;
+
+and:
+
+animal->sound();
+
+calls the Cat version of sound().
+
+Output
+Dog barks
+Cat meows
+OOP Concept Used
+
+Run-Time Polymorphism — Virtual Function
+
+              Animal
+                |
+          virtual sound()
+             /      \
+            /        \
+         Dog          Cat
+          |            |
+      Dog barks     Cat meows
+
+The same base-class pointer can point to different derived objects, and the appropriate derived-class function is selected during execution.

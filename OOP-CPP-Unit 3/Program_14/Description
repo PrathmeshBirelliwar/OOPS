@@ -1,0 +1,68 @@
+C++ Object Slicing Demonstration
+Description
+
+This C++ program demonstrates object slicing in inheritance.
+
+The program contains a Base class and a Derived class. A Derived object is passed to two functions: one by value and one by reference. Passing it by value causes object slicing, while passing it by reference preserves the complete derived object.
+
+Classes Used
+1. Base Class
+
+The Base class is the base class.
+
+It contains the virtual display() function.
+The function displays "Base object".
+It has a virtual destructor.
+2. Derived Class
+
+The Derived class inherits from the Base class.
+
+It overrides the display() function.
+The function displays "Derived object".
+The override keyword is used to override the base-class virtual function.
+Functions Used
+1. displayByValue()
+void displayByValue(Base object)
+
+This function receives the object by value.
+
+When the Derived object is passed to this function, only the Base portion is copied. This is called object slicing.
+
+2. displayByReference()
+void displayByReference(const Base& object)
+
+This function receives the object by reference.
+
+The complete Derived object is preserved, so the overridden Derived::display() function is called.
+
+Main Function
+
+In the main() function, a Derived object is created.
+
+It is passed to both functions:
+
+displayByValue(derived);
+displayByReference(derived);
+
+The results are then displayed.
+
+Output
+Passing by value: Base object
+Passing by reference: Derived object
+OOP Concept Used
+
+Object Slicing
+
+             Derived Object
+                   |
+          +--------+--------+
+          |                 |
+     Pass by Value     Pass by Reference
+          |                 |
+          ↓                 ↓
+    Base portion       Complete object
+          |                 |
+          ↓                 ↓
+    Base object       Derived object
+
+When a derived object is passed by value as a base object, the derived portion is sliced off. Passing it by reference preserves the complete derived object.

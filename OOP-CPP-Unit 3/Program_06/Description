@@ -1,0 +1,63 @@
+C++ Relational Operator Overloading
+Description
+
+This C++ program demonstrates relational operator overloading by overloading the > operator for a Distance class.
+
+The overloaded > operator is used to compare the meter values of two Distance objects and determine which distance is greater.
+
+Class Used
+1. Distance Class
+
+The Distance class is used to store and compare distances.
+
+meters stores the distance in meters.
+The constructor initializes the distance value.
+operator>() overloads the greater-than (>) operator.
+display() displays the distance in meters.
+operator>() Function
+
+The operator>() function compares the meters values of two Distance objects.
+
+It returns:
+
+true if the first distance is greater.
+false if the first distance is not greater.
+
+For example:
+
+120 meters > 90 meters
+        ↓
+      true
+Main Function
+
+In the main() function, two Distance objects are created:
+
+First distance: 120 meters
+Second distance: 90 meters
+
+The > operator is then used to compare the two objects.
+
+If the first distance is greater, the program displays an appropriate message.
+
+Output
+First distance: 120 meters
+Second distance: 90 meters
+First distance is greater
+OOP Concept Used
+
+Relational Operator Overloading
+
+       Distance
+       /      \
+   First     Second
+ 120 m        90 m
+      \      /
+       > operator
+           ↓
+         true
+
+The expression:
+
+first > second
+
+uses the overloaded operator>() function to compare the two Distance objects.

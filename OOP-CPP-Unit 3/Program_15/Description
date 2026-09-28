@@ -1,0 +1,82 @@
+C++ Payment Processing System
+Description
+
+This C++ program demonstrates run-time polymorphism using a real-world payment processing system.
+
+The program uses an abstract Payment class as a common interface. Different payment classes such as CardPayment, UpiPayment, and NetBankingPayment provide their own implementation of the pay() function.
+
+Classes Used
+1. Payment Class
+
+The Payment class is the abstract base class.
+
+It contains the pure virtual pay() function.
+It contains a virtual destructor.
+The pay() function defines a common interface for different payment methods.
+
+The pure virtual function is:
+
+virtual void pay(double amount) const = 0;
+2. CardPayment Class
+
+The CardPayment class inherits from Payment.
+
+It overrides the pay() function.
+It displays the payment amount and "using card".
+3. UpiPayment Class
+
+The UpiPayment class inherits from Payment.
+
+It overrides the pay() function.
+It displays the payment amount and "using UPI".
+4. NetBankingPayment Class
+
+The NetBankingPayment class inherits from Payment.
+
+It overrides the pay() function.
+It displays the payment amount and "using net banking".
+processPayment() Function
+
+The function:
+
+void processPayment(const Payment& payment, double amount)
+
+accepts a base-class reference.
+
+It calls:
+
+payment.pay(amount);
+
+Because pay() is virtual, the appropriate payment class's implementation is selected at run time.
+
+Main Function
+
+In the main() function, three payment objects are created:
+
+Card Payment → Rs. 1250
+UPI Payment → Rs. 750
+Net Banking → Rs. 500
+
+Each object is passed to processPayment().
+
+Output
+Paid Rs. 1250 using card
+Paid Rs. 750 using UPI
+Paid Rs. 500 using net banking
+OOP Concept Used
+
+Run-Time Polymorphism — Abstract Class and Virtual Function
+
+                  Payment
+                     |
+             pure virtual pay()
+                     |
+        +------------+------------+
+        |            |            |
+      Card          UPI       Net Banking
+        |            |            |
+     pay()         pay()        pay()
+        |            |            |
+       Card          UPI      Net Banking
+
+The same processPayment() function can process different payment types through a common Payment interface.

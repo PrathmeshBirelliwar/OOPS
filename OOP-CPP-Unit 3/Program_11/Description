@@ -1,0 +1,64 @@
+C++ Abstract Class and Pure Virtual Function
+Description
+
+This C++ program demonstrates an abstract class using a pure virtual area() function.
+
+The Shape class contains the pure virtual function area(), so it becomes an abstract class and cannot be instantiated directly. The Rectangle class inherits from Shape and provides the implementation of the area() function.
+
+Classes Used
+1. Shape Class
+
+The Shape class is the abstract base class.
+
+It contains the pure virtual area() function.
+The function is declared using = 0.
+It contains a virtual destructor.
+An object of the Shape class cannot be created directly.
+
+The pure virtual function is:
+
+virtual double area() const = 0;
+2. Rectangle Class
+
+The Rectangle class is derived from the Shape class.
+
+length stores the length of the rectangle.
+width stores the width.
+The constructor initializes the length and width.
+area() overrides the pure virtual function of the Shape class.
+
+Formula:
+
+Area = Length × Width
+Main Function
+
+In the main() function, a Rectangle object is created with:
+
+Length: 8.0
+Width: 4.0
+
+The area() function is then called to calculate and display the area.
+
+Output
+Rectangle Area: 32
+OOP Concept Used
+
+Abstract Class and Pure Virtual Function
+
+              Shape
+                |
+       pure virtual area()
+                |
+                ↓
+           Rectangle
+                |
+         implements area()
+                |
+                ↓
+          Area = 32
+
+The statement:
+
+virtual double area() const = 0;
+
+makes Shape an abstract class. The derived Rectangle class must provide an implementation of area() to become a concrete class.

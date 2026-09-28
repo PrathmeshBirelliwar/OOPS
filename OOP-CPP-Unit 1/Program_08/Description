@@ -1,0 +1,70 @@
+# C++ Inline and Friend Function
+
+## Description
+
+This program demonstrates the use of an inline member function and a friend function in C++. The program stores a value as a private data member and provides two different ways to access it.
+
+## Class Used
+
+### 1. Test
+
+The `Test` class contains a private data member, a constructor, an inline member function, and a friend function declaration.
+
+### Data Member
+
+- `value` – Stores the integer value privately.
+
+### Constructor
+
+- `Test(int v)` – Initializes the private `value`.
+
+### Inline Function
+
+- `getValue()` – Returns the value stored in the private data member.
+
+### Friend Function
+
+- `show(Test t)` – Accesses and displays the private `value` directly.
+
+## Main Function
+
+The `main()` function creates a `Test` object with the value `50`.
+
+First, the inline `getValue()` function is called to display the value.
+
+Then, the friend function `show()` is called to access and display the same private value.
+
+## Output
+
+50
+50
+
+## OOP Concept Used
+
+- Class
+- Object
+- Encapsulation
+- Private Data Member
+- Constructor
+- Inline Function
+- Friend Function
+
+## Program Flow
+
+Start
+  ↓
+Create Test Object
+  ↓
+Initialize value = 50
+  ↓
+Call getValue()
+  ↓
+Display 50
+  ↓
+Call Friend Function show()
+  ↓
+Access Private value
+  ↓
+Display 50
+  ↓
+End

@@ -1,0 +1,55 @@
+# C++ Constructor and Destructor
+
+## Description
+
+This program demonstrates the use of a constructor and destructor in C++. The constructor is automatically called when an object is created, while the destructor is automatically called when the object is destroyed.
+
+## Class Used
+
+### 1. Demo
+
+The `Demo` class contains a constructor and a destructor.
+
+### Constructor
+
+The `Demo()` constructor displays the message `Constructor called` when an object is created.
+
+### Destructor
+
+The `~Demo()` destructor displays the message `Destructor called` when the object is destroyed.
+
+## Main Function
+
+The `main()` function creates an object named `d` of the `Demo` class.
+
+When the object is created, the constructor is automatically executed.
+
+When the `main()` function ends, the object is destroyed and the destructor is automatically executed.
+
+## Output
+
+Constructor called
+Destructor called
+
+## OOP Concept Used
+
+- Constructor
+- Destructor
+- Object Creation
+- Automatic Object Cleanup
+
+## Program Flow
+
+Start
+  ↓
+Create Demo Object
+  ↓
+Constructor Called
+  ↓
+Program Execution
+  ↓
+Object Destroyed
+  ↓
+Destructor Called
+  ↓
+End

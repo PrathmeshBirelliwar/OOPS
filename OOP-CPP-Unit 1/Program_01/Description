@@ -1,0 +1,44 @@
+# C++ Basic Data Types
+
+## Description
+
+This program demonstrates the use of basic data types in C++. It stores and displays a student's roll number, grade, and fee amount using `int`, `char`, and `float` data types.
+
+## Variables Used
+
+### 1. roll
+Stores the student's roll number using the `int` data type.
+
+### 2. grade
+Stores the student's grade using the `char` data type.
+
+### 3. fee
+Stores the student's fee amount using the `float` data type.
+
+## Main Function
+
+The `main()` function initializes the student details and uses `cout` to display the roll number, grade, and fee amount.
+
+## Output
+
+Roll No: 101
+Grade: A
+Fee: 12500.5
+
+## Concept Used
+
+- Basic Data Types
+- Variable Declaration
+- Standard Output using `cout`
+
+## Program Flow
+
+Start
+  ↓
+Declare Variables
+  ↓
+Store Roll Number, Grade and Fee
+  ↓
+Display Student Details
+  ↓
+End

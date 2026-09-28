@@ -1,0 +1,64 @@
+C++ Base Pointer Without Virtual Function
+Description
+
+This C++ program demonstrates static binding using a base-class pointer and a derived-class object.
+
+The Base class contains a display() function, and the Derived class defines its own display() function. However, since the display() function in the base class is not virtual, the base-class version is called when accessed through a base-class pointer.
+
+Classes Used
+1. Base Class
+
+The Base class is the base class.
+
+It contains the display() function.
+The display() function displays "Base display function".
+The function is not declared as virtual.
+2. Derived Class
+
+The Derived class inherits from the Base class.
+
+It defines its own display() function.
+This function displays "Derived display function".
+Main Function
+
+In the main() function, a Derived object is created.
+
+A base-class pointer is then made to point to the derived object:
+
+Base* basePointer = &derivedObject;
+
+The display() function is called using the base pointer:
+
+basePointer->display();
+
+Since display() is not virtual, the Base class function is called.
+
+Output
+Base display function
+OOP Concept Used
+
+Static Binding / Base-Class Pointer Without Virtual Function
+
+        Base
+         |
+     display()
+         ↑
+         |
+      Derived
+         |
+     display()
+         |
+         ↓
+ Base pointer
+         |
+         ↓
+Base display function
+Important Point
+
+Because the function is not virtual:
+
+void display() const
+
+the compiler binds the function call to the Base class version.
+
+If the function were declared virtual, it would demonstrate run-time polymorphism instead.

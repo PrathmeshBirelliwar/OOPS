@@ -1,0 +1,46 @@
+# C++ Loop and Array
+
+## Description
+
+This program demonstrates the use of an array and a `for` loop in C++. It stores the marks of five students in an array and displays each mark using a loop.
+
+## Variables Used
+
+### 1. marks
+An integer array that stores the marks of five students.
+
+### 2. i
+The loop variable used to access each array element.
+
+## Main Function
+
+The `main()` function initializes an array with five student marks. A `for` loop starts from index 0 and continues until index 4 to access and display every element of the array.
+
+## Output
+
+78 82 91 67 88
+
+## Concept Used
+
+- Arrays
+- for Loop
+- Array Indexing
+- Iteration
+
+## Program Flow
+
+Start
+  ↓
+Create and Initialize Array
+  ↓
+Initialize i = 0
+  ↓
+Check i < 5
+  ↓
+Display marks[i]
+  ↓
+Increment i
+  ↓
+Repeat Until i = 5
+  ↓
+End

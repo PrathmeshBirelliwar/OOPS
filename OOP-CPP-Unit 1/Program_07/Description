@@ -1,0 +1,62 @@
+# C++ Static Member
+
+## Description
+
+This program demonstrates the use of a static data member in C++. The static member `count` is used to count the number of objects created from the `Student` class.
+
+## Class Used
+
+### 1. Student
+
+The `Student` class contains a static data member named `count` and a constructor.
+
+### Static Data Member
+
+- `count` – Stores the total number of objects created.
+
+### Constructor
+
+The constructor increments the value of `count` whenever a new `Student` object is created.
+
+## Main Function
+
+The `main()` function creates three objects: `s1`, `s2`, and `s3`.
+
+Each object creation calls the constructor, which increases the shared static `count` variable.
+
+Finally, `Student::count` is used to display the total number of objects created.
+
+## Output
+
+3
+
+## OOP Concept Used
+
+- Static Data Member
+- Class
+- Objects
+- Constructor
+- Shared Class Member
+- Scope Resolution Operator
+
+## Program Flow
+
+Start
+  ↓
+Initialize count = 0
+  ↓
+Create s1
+  ↓
+count = 1
+  ↓
+Create s2
+  ↓
+count = 2
+  ↓
+Create s3
+  ↓
+count = 3
+  ↓
+Display Student::count
+  ↓
+End

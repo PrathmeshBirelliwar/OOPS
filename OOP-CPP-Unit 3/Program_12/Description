@@ -1,0 +1,81 @@
+C++ Collection of Polymorphic Shape Pointers
+Description
+
+This C++ program demonstrates run-time polymorphism by storing different shape objects through pointers to a common abstract Shape class.
+
+The program uses vector and unique_ptr to store Rectangle and Circle objects. Each object provides its own implementation of area() and displayName().
+
+Classes Used
+1. Shape Class
+
+The Shape class is the abstract base class.
+
+It contains the pure virtual area() function.
+It contains the pure virtual displayName() function.
+It has a virtual destructor.
+It provides a common interface for different shapes.
+
+The functions are:
+
+virtual double area() const = 0;
+virtual void displayName() const = 0;
+2. Rectangle Class
+
+The Rectangle class is derived from Shape.
+
+length stores the length.
+width stores the width.
+area() calculates the rectangle's area.
+displayName() displays "Rectangle".
+
+Formula:
+
+Area = Length × Width
+3. Circle Class
+
+The Circle class is also derived from Shape.
+
+radius stores the radius.
+area() calculates the circle's area.
+displayName() displays "Circle".
+
+Formula:
+
+Area = π × Radius × Radius
+Main Function
+
+In the main() function, a vector is created to store pointers to Shape objects:
+
+vector<unique_ptr<Shape>> shapes;
+
+Two objects are then added:
+
+Rectangle → length 5.0, width 3.0
+Circle → radius 2.0
+
+The for loop processes every shape and calls:
+
+shape->displayName();
+shape->area();
+
+Because these functions are virtual, the appropriate derived-class implementation is called.
+
+Output
+Rectangle Area: 15
+Circle Area: 12.5664
+OOP Concept Used
+
+Run-Time Polymorphism — Collection of Polymorphic Objects
+
+                  Shape
+                    |
+          +---------+---------+
+          |                   |
+      Rectangle             Circle
+          |                   |
+       Area = 15          Area = 12.5664
+          \                   /
+           \                 /
+            vector<unique_ptr<Shape>>
+
+The program demonstrates how different derived objects can be processed through a common abstract base-class interface. unique_ptr also provides safe ownership of the dynamically managed objects.

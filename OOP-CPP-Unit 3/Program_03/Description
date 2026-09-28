@@ -1,0 +1,63 @@
+C++ Unary Minus Operator Overloading
+Description
+
+This C++ program demonstrates unary operator overloading by overloading the unary minus (-) operator for a Number class.
+
+The operator-() function defines how the unary minus operator should work when it is applied to a Number object.
+
+Class Used
+1. Number Class
+
+The Number class is used to store and display an integer value.
+
+value stores the number.
+The constructor initializes the value.
+operator-() overloads the unary minus operator.
+display() displays the stored value.
+operator-() Function
+
+The operator-() function performs the unary minus operation.
+
+It takes no arguments because unary operators work on one operand.
+It creates and returns a new Number object.
+The stored value is changed to its negative value.
+
+For example:
+
+25 → -25
+Main Function
+
+In the main() function, a Number object is created with the value:
+
+25
+
+The unary minus operator is then applied:
+
+Number second = -first;
+
+The original and negated values are displayed.
+
+Output
+Original value: 25
+Negated value: -25
+OOP Concept Used
+
+Unary Operator Overloading
+
+Number
+   |
+   |-- value = 25
+   |
+   |-- operator-()
+          ↓
+       -25
+
+The expression:
+
+-first
+
+internally calls:
+
+first.operator-()
+
+Thus, the program demonstrates how an operator can be given a specific meaning for a user-defined class.

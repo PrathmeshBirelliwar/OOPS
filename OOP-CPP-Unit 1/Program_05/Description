@@ -1,0 +1,56 @@
+# C++ Class and Object
+
+## Description
+
+This program demonstrates the basic concept of classes and objects in C++. A `Student` class is created to store a student's name and age. An object of the class is then created and used to display the student's details.
+
+## Class Used
+
+### 1. Student
+
+The `Student` class contains two data members and one member function.
+
+### Data Members
+
+- `name` – Stores the student's name.
+- `age` – Stores the student's age.
+
+### Member Function
+
+- `show()` – Displays the student's name and age.
+
+## Main Function
+
+The `main()` function creates an object named `s1` of the `Student` class.
+
+The values `"Amit"` and `20` are assigned to the object's data members using the dot (`.`) operator.
+
+The `show()` function is then called to display the details.
+
+## Output
+
+Amit 20
+
+## OOP Concept Used
+
+- Class
+- Object
+- Data Members
+- Member Function
+- Dot Operator
+
+## Program Flow
+
+Start
+  ↓
+Define Student Class
+  ↓
+Create Object s1
+  ↓
+Assign Name and Age
+  ↓
+Call show()
+  ↓
+Display Student Details
+  ↓
+End

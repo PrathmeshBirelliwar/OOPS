@@ -1,0 +1,75 @@
+C++ Prefix and Postfix Increment Operator Overloading
+Description
+
+This C++ program demonstrates unary operator overloading by overloading both prefix (++object) and postfix (object++) increment operators for a Counter class.
+
+The prefix operator increments the value first, while the postfix operator returns the old value and then increments the counter. A dummy int parameter is used to distinguish the postfix operator from the prefix operator.
+
+Class Used
+1. Counter Class
+
+The Counter class is used to store and increment an integer value.
+
+value stores the counter value.
+The constructor initializes the counter.
+operator++() overloads the prefix increment operator.
+operator++(int) overloads the postfix increment operator.
+display() displays the current value.
+operator++() — Prefix Function
+
+This function handles:
+
+++counter;
+The value is incremented first.
+The updated object is returned.
+
+For example:
+
+5 → 6
+operator++(int) — Postfix Function
+
+This function handles:
+
+counter++;
+The old value is stored first.
+The counter is then incremented.
+The old value is returned.
+
+For example:
+
+Old value: 6
+New value: 7
+
+The int parameter is a dummy parameter used to distinguish postfix increment from prefix increment.
+
+Main Function
+
+In the main() function, a Counter object is created with the initial value:
+
+5
+
+First, the prefix increment is performed.
+
+Then, the postfix increment is performed and the old value returned by the operation is displayed.
+
+Output
+After prefix increment: 6
+Value returned by postfix increment: 6
+Counter after postfix increment: 7
+OOP Concept Used
+
+Unary Operator Overloading — Prefix and Postfix Increment
+
+              Counter
+                 |
+          value = 5
+                 |
+        +--------+--------+
+        |                 |
+   ++counter          counter++
+   Prefix             Postfix
+        |                 |
+     6 first          6 returned
+                      then value = 7
+
+Thus, the program demonstrates how prefix and postfix ++ operators can be overloaded for a user-defined class.

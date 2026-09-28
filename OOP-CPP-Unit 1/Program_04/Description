@@ -1,0 +1,47 @@
+# C++ Functions
+
+## Description
+
+This program demonstrates the use of a function in C++. It creates an addition function that accepts two integers and returns their sum.
+
+## Function Used
+
+### 1. add()
+
+The `add()` function accepts two integer parameters and returns their sum.
+
+## Main Function
+
+The `main()` function declares two integer variables, `a` and `b`, and calls the `add()` function by passing these values.
+
+The returned result is displayed using `cout`.
+
+## Output
+
+Sum = 30
+
+## Concept Used
+
+- Functions
+- Function Prototype
+- Function Definition
+- Function Calling
+- Return Value
+
+## Program Flow
+
+Start
+  ↓
+Declare a and b
+  ↓
+Call add(a, b)
+  ↓
+Function receives x and y
+  ↓
+Calculate x + y
+  ↓
+Return Result
+  ↓
+Display Sum
+  ↓
+End
