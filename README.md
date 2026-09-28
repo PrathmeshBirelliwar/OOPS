@@ -11,7 +11,7 @@ The repository is organized unit-wise, with each program maintained in a separat
 | Details | Information |
 |---|---|
 | **Student Name** | Prathmesh Birelliwar |
-| **PRN** | ZPRN 125UAD1309 |
+| **ZPRN** |125UAD1309 |
 | **Class / Division** | FY-B.Tech / Division B |
 | **Course** | Object-Oriented Programming using C++ |
 | **College** | Zeal College of Engineering and Research, Pune |
