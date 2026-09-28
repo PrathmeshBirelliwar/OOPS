@@ -252,44 +252,6 @@ The main objectives of this repository are:
 
 ---
 
-# ▶️ How to Run the Programs
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/PrathmeshBirelliwar/OOPS.git
-```
-
-## 2. Open the Repository
-
-Open the cloned repository in **Visual Studio Code**.
-
-## 3. Navigate to a Program
-
-For example:
-
-```text
-OOP-CPP-Unit 1
-└── Program_01
-    └── Program_01.cpp
-```
-
-## 4. Compile the Program
-
-Open the VS Code terminal and run:
-
-```bash
-g++ Program_01.cpp -o Program_01
-```
-
-## 5. Run the Program
-
-On Windows:
-
-```bash
-Program_01
-```
-
 ---
 
 # 📖 Units Overview
